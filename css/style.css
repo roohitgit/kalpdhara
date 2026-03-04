@@ -440,3 +440,20 @@ background:#a87c25;
 transform:rotate(15deg);
 
 }
+
+.visitor-box{
+margin-top:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+}
+
+.visitor-icon{
+color:#c79a3b;
+font-size:14px;
+}
+
+.visitor-img{
+height:20px;
+}
