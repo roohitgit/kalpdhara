@@ -16,6 +16,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" href="images/logo.png">
 </head>
 
 <body>
@@ -24,11 +25,18 @@
 
 <h1>Kalpdhara Architect</h1>
 
-<nav>
+<div class="menu-toggle" id="menuToggle">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<nav id="navMenu">
 
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="projects.html">Projects</a>
+<a href="gallery.html">Gallery</a>
 <a href="contact.html">Contact</a>
 
 </nav>
@@ -138,7 +146,81 @@
 
 </section>
 
+<!-- TESTIMONIALS -->
 
+<section class="testimonials">
+
+<h2 class="section-title">Client Testimonials</h2>
+
+<div class="testimonial-grid">
+
+<div class="testimonial-card">
+
+<div class="google-icon">
+<i class="fab fa-google"></i>
+</div>
+
+<p>
+Excellent architectural service. The team designed our home
+beautifully with modern concepts.
+</p>
+
+<h4>Rahul Patil</h4>
+
+<div class="stars">
+★★★★★
+</div>
+
+</div>
+
+
+<div class="testimonial-card">
+
+<div class="google-icon">
+<i class="fab fa-google"></i>
+</div>
+
+<p>
+Professional work and timely completion.
+Highly recommended architect.
+</p>
+
+<h4>Sneha Kulkarni</h4>
+
+<div class="stars">
+★★★★★
+</div>
+
+</div>
+
+
+<div class="testimonial-card">
+
+<div class="google-icon">
+<i class="fab fa-google"></i>
+</div>
+
+<p>
+Very creative design ideas and good project execution.
+</p>
+
+<h4>Amit Deshmukh</h4>
+
+<div class="stars">
+★★★★★
+</div>
+
+</div>
+
+</div>
+<!-- ADD BUTTON HERE -->
+
+<br>
+
+<a href="https://maps.app.goo.gl/kVwbXZDMyd2bxqyJ6" class="btn">
+Leave us a Google Review
+</a>
+</section>
 <!-- CALL TO ACTION -->
 
 <section class="cta">
@@ -156,12 +238,30 @@
 
 <p>© 2026 Kalpdhara Architect | All Rights Reserved</p>
 
+<div class="visitor-box">
+
+<i class="fas fa-eye visitor-icon"></i>
+
+<img class="visitor-img"
+src="https://visitor-badge.laobi.icu/badge?page_id=kalpdharaarchitect.rohitbadole"/>
+
+</div>
+
 </footer>
 
 
 <a href="https://wa.me/919999999999" class="whatsapp">WhatsApp</a>
 
 <script src="js/script.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- IMAGE POPUP -->
+
+<div id="imagePopup" class="image-popup" onclick="closeImage()">
+
+<img id="popupImg">
+
+</div>
 
 </body>
 
