@@ -40,3 +40,36 @@ header.style.boxShadow = "0 2px 10px rgba(0,0,0,0.08)";
 });
 
 
+function openImage(src){
+document.getElementById("imagePopup").style.display = "flex";
+document.getElementById("popupImg").src = src;
+}
+
+function closeImage(){
+document.getElementById("imagePopup").style.display = "none";
+}
+
+// HAMBURGER MENU
+
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+menuToggle.addEventListener("click", () => {
+
+menuToggle.classList.toggle("active");
+navMenu.classList.toggle("active");
+
+});
+
+// CLOSE MENU AFTER CLICK
+
+document.querySelectorAll("#navMenu a").forEach(link => {
+
+link.addEventListener("click", () => {
+
+menuToggle.classList.remove("active");
+navMenu.classList.remove("active");
+
+});
+
+});

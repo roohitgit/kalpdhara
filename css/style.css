@@ -49,7 +49,7 @@ color:#c79a3b;
 
 .hero{
 height:80vh;
-background:url('../images/hero.jpg') center/cover no-repeat;
+background:url('../images/project4.jpg') center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -253,12 +253,10 @@ font-size:16px;
 /* PAGE BANNER */
 
 .page-banner{
-
-background:#111;
+background:linear-gradient(135deg,#c79a3b,#a87c25);
 color:white;
 text-align:center;
-padding:60px 20px;
-
+padding:80px 20px;
 }
 
 .page-banner h2{
@@ -456,4 +454,278 @@ font-size:14px;
 
 .visitor-img{
 height:20px;
+}
+
+/* GALLERY */
+
+.gallery{
+padding:80px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.gallery-grid img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+padding:80px 8%;
+background:#f7f7f7;
+text-align:center;
+}
+
+.testimonial-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.testimonial-card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.testimonial-card:hover{
+transform:translateY(-6px);
+}
+
+.google-icon{
+color:#DB4437;
+font-size:22px;
+margin-bottom:10px;
+}
+
+.testimonial-card p{
+font-size:15px;
+color:#555;
+margin-bottom:15px;
+}
+
+.testimonial-card h4{
+margin-bottom:5px;
+}
+
+.stars{
+color:#fbbc05;
+font-size:18px;
+}
+
+/* IMAGE POPUP */
+
+.image-popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+justify-content:center;
+align-items:center;
+z-index:2000;
+}
+
+.image-popup img{
+max-width:90%;
+max-height:90%;
+border-radius:8px;
+}
+
+.gallery-grid img{
+cursor:pointer;
+transition:0.3s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+.image-popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+justify-content:center;
+align-items:center;
+z-index:2000;
+padding:20px;
+}
+
+/* GALLERY */
+
+
+
+.gallery{
+max-width:1300px;
+margin:80px auto;
+padding:0 60px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.gallery-grid img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+section{
+max-width:1200px;
+margin:auto;
+}
+
+@media(max-width:768px){
+
+.gallery{
+padding:60px 20px;
+}
+
+}
+
+/* HAMBURGER MENU */
+
+.menu-toggle{
+display:none;
+font-size:24px;
+cursor:pointer;
+}
+
+/* MOBILE MENU */
+
+@media(max-width:768px){
+
+.menu-toggle{
+display:block;
+position:absolute;
+right:8%;
+top:22px;
+}
+
+nav{
+display:none;
+flex-direction:column;
+width:100%;
+background:white;
+position:absolute;
+top:70px;
+left:0;
+padding:20px 8%;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav a{
+margin:10px 0;
+}
+
+nav.active{
+display:flex;
+}
+
+}
+
+/* HAMBURGER MENU */
+
+.menu-toggle{
+display:none;
+flex-direction:column;
+cursor:pointer;
+gap:5px;
+}
+
+.menu-toggle span{
+width:25px;
+height:3px;
+background:#333;
+transition:0.3s;
+}
+
+/* ANIMATION TO X */
+
+.menu-toggle.active span:nth-child(1){
+transform:rotate(45deg) translate(5px,5px);
+}
+
+.menu-toggle.active span:nth-child(2){
+opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+transform:rotate(-45deg) translate(6px,-6px);
+}
+
+/* MOBILE MENU */
+
+@media(max-width:768px){
+
+header{
+position:relative;
+}
+
+.menu-toggle{
+display:flex;
+position:absolute;
+right:8%;
+top:25px;
+}
+
+nav{
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:white;
+flex-direction:column;
+align-items:center;
+max-height:0;
+overflow:hidden;
+transition:max-height 0.4s ease;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav a{
+margin:15px 0;
+font-size:16px;
+}
+
+nav.active{
+max-height:300px;
+}
+
 }
