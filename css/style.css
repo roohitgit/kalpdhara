@@ -606,9 +606,12 @@ transition:0.3s;
 transform:scale(1.05);
 }
 
-section{
-max-width:1200px;
-margin:auto;
+.page-banner{
+background:linear-gradient(135deg,#c79a3b,#a87c25);
+color:white;
+text-align:center;
+padding:90px 20px;
+width:100%;
 }
 
 @media(max-width:768px){
