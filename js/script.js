@@ -73,3 +73,7 @@ navMenu.classList.remove("active");
 });
 
 });
+
+console.log("%c👨‍💻 Designed & Developed by Rohit Badole",
+"color:#c79a3b; font-size:18px; font-weight:bold;");
+
